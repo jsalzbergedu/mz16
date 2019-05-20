@@ -22,58 +22,6 @@ impl HeaderError {
     }
 }
 
-// The definition of the DOS header is a modified form
-// of the following source code, and is modified and
-// distributed along with the rest of this program as a derivative work
-// under the terms of the gnu gpl v2:
-/****************************************************************/
-/*                                                              */
-/*                            exe.h                             */
-/*                                                              */
-/*                 DOS EXE Header Data Structure                */
-/*                                                              */
-/*                       December 1, 1991                       */
-/*                                                              */
-/*                      Copyright (c) 1995                      */
-/*                      Pasquale J. Villani                     */
-/*                      All Rights Reserved                     */
-/*                                                              */
-/* This file is part of DOS-C.                                  */
-/*                                                              */
-/* DOS-C is free software; you can redistribute it and/or       */
-/* modify it under the terms of the GNU General Public License  */
-/* as published by the Free Software Foundation; either version */
-/* 2, or (at your option) any later version.                    */
-/*                                                              */
-/* DOS-C is distributed in the hope that it will be useful, but */
-/* WITHOUT ANY WARRANTY; without even the implied warranty of   */
-/* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See    */
-/* the GNU General Public License for more details.             */
-/*                                                              */
-/* You should have received a copy of the GNU General Public    */
-/* License along with DOS-C; see the file COPYING.  If not,     */
-/* write to the Free Software Foundation, 675 Mass Ave,         */
-/* Cambridge, MA 02139, USA.                                    */
-/****************************************************************/
-// ...
-// typedef struct {
-//   UWORD exSignature;
-//   UWORD exExtraBytes;
-//   UWORD exPages;
-//   UWORD exRelocItems;
-//   UWORD exHeaderSize;
-//   UWORD exMinAlloc;
-//   UWORD exMaxAlloc;
-//   UWORD exInitSS;
-//   UWORD exInitSP;
-//   UWORD exCheckSum;
-//   UWORD exInitIP;
-//   UWORD exInitCS;
-//   UWORD exRelocTable;
-//   UWORD exOverlay;
-// } exe_header;
-// ...
-
 /// A definition of a header in a 16 bit dos executable
 #[derive(Debug)]
 pub struct Header {
