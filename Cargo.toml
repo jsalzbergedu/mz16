@@ -1,6 +1,6 @@
 [package]
 name = "mz16"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Jacob Salzberg"]
 edition = "2018"
 description = "A library for reading dos 16 bit executables of the mz format."
